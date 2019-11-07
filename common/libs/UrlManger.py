@@ -8,4 +8,7 @@ class UrlManger(object):
 
     @staticmethod
     def buildstaticurl(path):
-        return path
+        ver = "%s"%(22222)
+        path = "/static" + path + "?ver=" + ver
+        return UrlManger.buildurl(path)
+
